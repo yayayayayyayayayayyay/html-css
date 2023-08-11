@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 4rem;
+}
+
+.left h1 {
+    color: #228B22;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    z-index: 6;
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #228B22;
+    line-height: 80px;
+    position: relative;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: all 1s;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.right ul li a:hover {
+    border-radius: 7px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+
+/* =============== Home Section CSS Code Starts from Here =============== */
+#home {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(235 232 229);
+}
+
+.home-left .col-red {
+    margin-bottom: 10px;
+}
+
+.home-left .col-red p {
+    padding: 4px;
+    display: inline;
+    font-weight: bold;
+    border-radius: 9px;
+    background: #edcbc1;
+    color: #228B22;
+}
+
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-left p {
+    margin-bottom: 10px;
+}
+
+.home-left h1 {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.home-right {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    background-color: #228B22;
+    box-shadow: 0px 0px 12px 0px rgb(47 53 79);
+}
+
+.home-right:hover {
+    transform: translateY(-12px);
+}
+
+.home-right img {
+    position: relative;
+    bottom: 16px;
+    left: 67px;
+    z-index: 1;
+    width: 158px;
+}
+
+.bg-red-btn {
+    padding: 8px;
+    width: 124px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 15rem;
+    background: #228B22;
+    border: 1px solid #000000;
+}
+
+.bg-red-btn:hover {
+    padding: 8px;
+    margin-top: 10px;
+    background: transparent;
+    color: #228B22;
+    border: 1px solid #228B22;
+}
+
+
+/* =============== Delivery Partner Section CSS Code Starts from Here =============== */
+#delivery-partner {
+    height: auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#delivery-partner h4,
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner {
+    cursor: pointer;
+    width: 300px;
+    margin: 15px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s ease-in;
+    box-shadow: 0px 0px 12px -1px black;
+}
+
+.partner:hover {
+    transform: translateY(-12px);
+}
+
+.partner img {
+    width: 100px;
+}
+
+.partners .left img {
+    width: 70px;
+}
+
+
+/* =============== Main Section CSS Code Starts from Here =============== */
+
+#chef-main {
+    height: auto;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+h4 {
+    font-weight: bold;
+    color: #228B22;
+}
+
+#chef-main h4,
+h1,
+.contact {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chefs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.chef-item {
+    margin: 15px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.chef-item:hover {
+    transform: scale(1.1)
+}
+
+.chef-item img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px -1px black;
+}
+
+/* =============== Contact Section CSS Code Starts from Here =============== */
+
+.contact {
+    padding: 8rem 7%  1.4rem;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #228B22;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #000000;
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--span);
+    cursor: pointer;
+}
+
+/* =============== footer Section CSS Code Starts from Here =============== */
+#footer {
+    background-color: #228B22;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer-description {
+    color: #fff;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.social ul li {
+    margin: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.social ul li i {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: rgb(23, 23, 137);
+    line-height: 35px;
+}
+
+.right a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+/* =============== Media Queries Starts from Here for responsiveness =============== */
+
+@media screen and (max-width:821px) {
+    .list {
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        transition: all 1s;
+        background-color: #000000;
+    }
+
+    .right ul li a {
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        transition: all 1s;
+        text-decoration: none;
+    }
+
+    .right ul li a:hover {
+        border-radius: 7px;
+        color: #000000;
+        background-color: #fff;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+        top: 0%;
+        display: flex;
+        justify-content: center;
+    }
+    .up-left {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 717px) {
+    .header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+
+    #home {
+        flex-direction: column;
+    }
+
+    .home-left h1 {
+        font-size: 30px;
+    }
+
+    .home-left p {
+        font-size: 13.7px;
+    }
+
+    .home-right {
+        width: 280px;
+        margin-top: 20px;
+    }
+
+    .bg-red-btn {
+        width: 85px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    #delivery-partner {
+        height: auto;
+        padding: 1px;
+        width: 100%;
+    }
+
+    #contact h4,
+    h1 {
+        font-size: 20px;
+    }
+
+    #chef-main {
+        height: auto;
+    }
+
+    .chef-item img {
+        width: 95%;
+        height: auto;
+    }
+
+    .main-form {
+        width: 100%;
+        height: auto;
+    }
+    .contact .row {
+        flex-wrap: wrap;
+    }
+    
+    .contact .row .map {
+        height: 30rem;
+    }
+    
+    .contact .row form {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .footer-description {
+        width: 90%;
+    }
+}
